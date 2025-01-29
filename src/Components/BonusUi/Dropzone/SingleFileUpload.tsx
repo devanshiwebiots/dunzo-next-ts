@@ -9,7 +9,7 @@ const SingleFileUpload = () => {
     <Col lg="6">
       <Card>
         <CommonCardHeader title={SingleFileUploads} subTitle={FileUploadData} />
-        <CommonFileUpload maxFiles={1} body={true}/>
+        <CommonFileUpload />
       </Card>
     </Col>
   );

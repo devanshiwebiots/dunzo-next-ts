@@ -1,8 +1,5 @@
 import { Card, CardBody, Col } from "reactstrap";
-import AceEditor from "react-ace";
-import "ace-builds/src-noconflict/mode-java";
-import "ace-builds/src-noconflict/theme-monokai";
-import "ace-builds/src-noconflict/ext-language_tools";
+import { Highlight, themes } from "prism-react-renderer";
 import { JavaModeHeading } from "@/Constant/constant";
 import { TypScriptData } from "@/Data/Miscellaneous/Editors/EditorsData";
 import { CommonCardHeader } from "@/Components/General/Widgets/Common/CommonCardHeader";
@@ -13,19 +10,19 @@ const JavaMode = () => {
       <Card>
         <CommonCardHeader title={JavaModeHeading} />
         <CardBody>
-          <AceEditor
-            className="aceEditor w-auto"
-            mode="java"
-            theme="monokai"
-            value={TypScriptData}
-            name="blah2"
-            setOptions={{ useWorker: false }}
-            fontSize={14}
-            showPrintMargin={true}
-            showGutter={true}
-            editorProps={{ $blockScrolling: true }}
-            highlightActiveLine={true}
-          />
+        <Highlight theme={themes.vsDark} code={TypScriptData} language="Java">
+            {({ style, tokens, getLineProps, getTokenProps }) => (
+              <pre style={style}>
+                {tokens.map((line, i) => (
+                  <div key={i} {...getLineProps({ line })}>
+                    {line.map((token, key) => (
+                      <span key={key} {...getTokenProps({ token })} />
+                    ))}
+                  </div>
+                ))}
+              </pre>
+            )}
+          </Highlight>
         </CardBody>
       </Card>
     </Col>

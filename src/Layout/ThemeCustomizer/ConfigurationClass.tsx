@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Container, Modal, ModalBody, ModalHeader, ModalFooter, Row, Button } from 'reactstrap';
 import { toast } from 'react-toastify';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+// import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { useAppSelector } from '@/Redux/Hooks';
 import ConfigDB from '@/Config/ThemeConfig';
 import { PropsTypeProp } from '@/Types/ThemeCustomizerTypes';
@@ -47,9 +47,9 @@ const ConfigurationClass :React.FC<PropsTypeProp> = ({ toggle, modal }) => {
                     </Container>
                 </ModalBody>
                 <ModalFooter>
-                    <CopyToClipboard text={JSON.stringify(configDB)}>
+                    {/* <CopyToClipboard text={JSON.stringify(configDB)}>
                         <Button color="primary" className="notification" onClick={handleThemeCopy}>{CopyText}</Button>
-                    </CopyToClipboard>
+                    </CopyToClipboard> */}
                     <Button color='secondary' onClick={toggle}>{Cancel}</Button>
                 </ModalFooter>
             </Modal>

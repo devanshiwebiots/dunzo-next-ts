@@ -1,12 +1,16 @@
 // @ts-nocheck
 import { Class, CopyText, Markup } from "@/Constant/constant";
-import { CopyToClipboard } from "react-copy-to-clipboard";
 import { toast } from "react-toastify";
 import { Button, Container, Input, Row } from "reactstrap";
 
 const IconMarkUp = ({ icons, itag }) => {
   const featherIcons = require("feather-icons");
   const closeIcon = document.getElementsByClassName("icon-hover-bottom") as HTMLCollectionOf<HTMLElement>;
+
+  const handleCopy = async () => {
+    await navigator.clipboard.writeText(itag.iTag);
+    toast.info("Code Copied to clipboard !", { position: "bottom-right", theme: "colored" });
+  };
 
   const closeIconContainer = () => closeIcon[0].style.display = "none";
   if (itag !== "" && icons !== "") closeIcon[0].style.display = "block";
@@ -31,11 +35,9 @@ const IconMarkUp = ({ icons, itag }) => {
               <div className="form-inline">
                 <div className="form-group m-0">
                   <Input className="inp-val m-r-10" id="input_copy" type="text" defaultValue={itag.iTag} />
-                  <CopyToClipboard text={itag.iTag}>
-                    <Button color="primary" className="notification" onClick={() => toast.info("Code Copied to clipboard !", { position: toast.POSITION.BOTTOM_RIGHT, theme: "colored" })}>
+                    <Button color="primary" className="notification" onClick={handleCopy}>
                       {CopyText}
                     </Button>
-                  </CopyToClipboard>
                 </div>
               </div>
             </div>

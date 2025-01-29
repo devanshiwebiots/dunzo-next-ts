@@ -1,5 +1,4 @@
 import { Container, Row } from "reactstrap";
-import { useTour } from "@reactour/tour";
 import { useEffect } from "react";
 import UserProfileFirstStyle from "./UserProfileFirstStyle/UserProfileFirstStyle";
 import UserProfileSecondStyle from "./UserProfileSecondStyle/UserProfileSecondStyle";
@@ -10,16 +9,6 @@ import Breadcrumbs from "@/CommonComponent/Breadcrumb";
 import { BonusUi, Tour } from "@/Constant/constant";
 
 const TourMain = () => {
-  const { setIsOpen } = useTour();
-  useEffect(() => {
-    var timer = setTimeout(() => {
-      setIsOpen(true);
-    }, 1000);
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [setIsOpen]);
-
   return (
     <>
       <Breadcrumbs pageTitle={Tour} parent={BonusUi} title={Tour} />
