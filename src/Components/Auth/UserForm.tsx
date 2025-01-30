@@ -37,7 +37,7 @@ const UserForm = () => {
   return (
     <div>
       <div>
-        <Link className="logo" href="/dashboard/default">
+        <Link className="logo" href="/dashboard/ecommerce">
           <Image priority width={100} height={34} className="img-fluid for-light" src={imageOne} alt="login page" />
           <Image priority width={100} height={34} className="img-fluid for-dark" src={imageTwo} alt="login page" />
         </Link>
