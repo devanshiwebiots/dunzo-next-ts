@@ -23,12 +23,12 @@ const UserForm = () => {
       email,   
       password,  
       redirect: false,
-      callbackUrl: "/dashboard/default",
+      callbackUrl: "/dashboard/ecommerce",
     });
   
     if (result?.ok) {
       toast.success("successfully Logged in Rediract......")
-      router.push("/dashboard/default");
+      router.push("/dashboard/ecommerce");
     } else {     
       toast.error("Invalid Credential...");
     }
