@@ -18,7 +18,7 @@ const UserForm = () => {
   const router = useRouter();
  
   const formSubmitHandle = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();                                                                                  
+    // event.preventDefault();                                                                                  
     const result = await signIn("credentials", {
       email,   
       password,  
