@@ -14,21 +14,19 @@ const CreatePasswordContainer = () => {
           <div className="login-card login-dark">
             <div>
               <div>
-                <Link className="logo" href="/dashboard/ecommerce">
+                <Link className="logo" href="/dashboard/default">
                   <img className="img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt="looginpage" />
                   <img className="img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="looginpage" />
                 </Link>
               </div>
               <div className="login-main">
-                <Form className="theme-form" onSubmit={(e) => e.preventDefault()}>
+                <Form className="theme-form" onSubmit={(e)=>e.preventDefault()}>
                   <h4>{CreateYourPassword}</h4>
                   <FormGroup>
                     <Label className="col-form-label">New Password</Label>
                     <div className="position-relative">
                       <Input type={show ? "text" : "password"} required placeholder="*********" />
-                      <div className="show-hide" onClick={() => setShow(!show)}>
-                        <span className="show" />
-                      </div>
+                      <div className="show-hide" onClick={() => setShow(!show)}><span className="show" /></div>
                     </div>
                   </FormGroup>
                   <FormGroup>
@@ -38,20 +36,11 @@ const CreatePasswordContainer = () => {
                   <FormGroup className="mb-0">
                     <div className="checkbox p-0">
                       <Input id="checkbox1" type="checkbox" />
-                      <Label className="text-muted" htmlFor="checkbox1">
-                        {RememberPassword}
-                      </Label>
+                      <Label className="text-muted" htmlFor="checkbox1">{RememberPassword}</Label>
                     </div>
-                    <Button block color="primary" className="w-100">
-                      {DoneButton}
-                    </Button>
+                    <Button block color="primary" className="w-100">{DoneButton}</Button>
                   </FormGroup>
-                  <p className="mt-4 mb-0">
-                    {DontHaveAccount}
-                    <Link className="ms-2" href="/others/authentication/loginsimple">
-                      {CreateYourAccount}
-                    </Link>{" "}
-                  </p>
+                  <p className="mt-4 mb-0">{DontHaveAccount}<Link className="ms-2" href="/others/authentication/loginsimple">{CreateYourAccount}</Link>                  </p>
                 </Form>
               </div>
             </div>

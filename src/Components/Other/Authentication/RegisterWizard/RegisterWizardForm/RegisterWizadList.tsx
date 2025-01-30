@@ -10,8 +10,8 @@ export const RegisterWizardList:React.FC<RegisterWizardListProp> = ({ level }) =
   return (
     <ul className="custom-scrollbar anchor">
       <li>
-        <Link className="logo text-start ps-0" href="/dashboard/ecommerce">
-          <img className="for-dark" src={`${ImagePath}/logo/logo.png`} alt="looginpage" />
+        <Link className="logo text-start ps-0" href="/dashboard/default">
+          <img className="for-dark" src={`${ImagePath}/logo/logo.png`} alt="looginpage"  />
           <img className="for-light" src={`${ImagePath}/logo/logo-1.png`} alt="looginpage" />
         </Link>
       </li>
