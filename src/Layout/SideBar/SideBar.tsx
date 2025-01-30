@@ -20,14 +20,14 @@ export const SideBar = () => {
       <div>
         <LogoWrapper />
         <nav className="sidebar-main">
-          <div className={`left-arrow ${margin === 0 ? "disabled" : ""}`} onClick={()=>dispatch(scrollToLeft())} id="left-arrow">
+          <div className={`left-arrow ${margin === 0 ? "disabled" : ""}`} onClick={() => dispatch(scrollToLeft())} id="left-arrow">
             <ArrowLeft />
           </div>
-          <div id="sidebar-menu" style={{position:"inherit", marginLeft: `${wrapper === "horizontal-wrapper" ? margin + "px" : "0px"}` }}>
+          <div id="sidebar-menu" style={{ position: "inherit", marginLeft: `${wrapper === "horizontal-wrapper" ? margin + "px" : "0px"}` }}>
             <ul className="sidebar-links theme-scrollbar" id="simple-bar">
               <SimpleBar>
                 <li className="back-btn">
-                  <Link href="/dashboard/default">
+                  <Link href="/dashboard/ecommerce">
                     <Image priority width={32} height={32} className="img-fluid" src={`${ImagePath}/logo/logo-icon.png`} alt="" />
                   </Link>
                   <div className="mobile-back text-end">
@@ -35,16 +35,16 @@ export const SideBar = () => {
                     <i className="fa fa-angle-right ps-2" aria-hidden="true"></i>
                   </div>
                 </li>
-                <li className={`pin-title sidebar-main-title ${pinedMenu.length > 1 ? "show" : ""} `}>              
+                <li className={`pin-title sidebar-main-title ${pinedMenu.length > 1 ? "show" : ""} `}>
                   <div>
                     <h6>{Pinned}</h6>
                   </div>
                 </li>
-                <SidebarMenuList/>
+                <SidebarMenuList />
               </SimpleBar>
             </ul>
           </div>
-          <div className={`right-arrow ${margin === -3500 ? "disabled" : ""}`} onClick={()=>dispatch(scrollToRight())} id="right-arrow">
+          <div className={`right-arrow ${margin === -3500 ? "disabled" : ""}`} onClick={() => dispatch(scrollToRight())} id="right-arrow">
             <ArrowRight />
           </div>
         </nav>

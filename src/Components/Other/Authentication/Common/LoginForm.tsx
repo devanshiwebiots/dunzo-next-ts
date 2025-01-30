@@ -15,7 +15,7 @@ export const LoginForm: React.FC<LoginFormType> = ({ password, logoClass, valida
   return (
     <div>
       <div>
-        <Link className={`logo ${logoClass ? logoClass : ""}`} href="/dashboard/default">
+        <Link className={`logo ${logoClass ? logoClass : ""}`} href="/dashboard/ecommerce">
           <img className="img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt="looginpage" />
           <img className="img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="looginpage" />
         </Link>
@@ -35,21 +35,38 @@ export const LoginForm: React.FC<LoginFormType> = ({ password, logoClass, valida
                 <Label className="col-form-label">{Password}</Label>
                 <div className="position-relative">
                   <Field className="form-control" type={show ? "text" : "password"} name="password" required placeholder="*********" />
-                  <div className="show-hide" onClick={() => setShow(!show)}><span className="show"> </span></div>
+                  <div className="show-hide" onClick={() => setShow(!show)}>
+                    <span className="show"> </span>
+                  </div>
                 </div>
                 <ErrorMessage name="password" component="span" className="pt-1 text-danger" />
               </FormGroup>
               <FormGroup className="form-group mb-0">
                 <div className="checkbox p-0">
                   <Input id="checkbox1" type="checkbox" />
-                  <Label className="text-muted" htmlFor="checkbox1">{RememberPassword}</Label>
+                  <Label className="text-muted" htmlFor="checkbox1">
+                    {RememberPassword}
+                  </Label>
                 </div>
-                {password && (<Link className="link" href="/others/authentication/forgetpassword">{ForgotPassword}?</Link>)}
-                <div className="text-end mt-3"><Button color="primary" block className="w-100">{SignIn}</Button></div>
+                {password && (
+                  <Link className="link" href="/others/authentication/forgetpassword">
+                    {ForgotPassword}?
+                  </Link>
+                )}
+                <div className="text-end mt-3">
+                  <Button color="primary" block className="w-100">
+                    {SignIn}
+                  </Button>
+                </div>
               </FormGroup>
               <h6 className="text-muted mt-4 or">{OrSignInWith}</h6>
-              <OtherWay/>
-              <p className="mt-4 mb-0 text-center">{DontHaveAccount}<Link className="ms-2" href="/others/authentication/registersimple">{CreateAccount}</Link></p>
+              <OtherWay />
+              <p className="mt-4 mb-0 text-center">
+                {DontHaveAccount}
+                <Link className="ms-2" href="/others/authentication/registersimple">
+                  {CreateAccount}
+                </Link>
+              </p>
             </Form>
           )}
         </Formik>

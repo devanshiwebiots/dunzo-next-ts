@@ -14,13 +14,13 @@ export const RegisterForm:React.FC<SignupProp> = ({ logoClass }) => {
   return (
     <div>
       <div>
-        <Link className={`logo ${logoClass}`} href="/dashboard/default">
+        <Link className={`logo ${logoClass}`} href="/dashboard/ecommerce">
           <img className="img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt="looginpage" />
           <img className="img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="looginpage" />
         </Link>
       </div>
       <div className="login-main">
-        <Formik initialValues={{firstname: "", lastname: "", email: "", password: "" }} onSubmit={submitHandler}>
+        <Formik initialValues={{ firstname: "", lastname: "", email: "", password: "" }} onSubmit={submitHandler}>
           {() => (
             <Form className="theme-form">
               <h4>{CreateYourAccount}</h4>
@@ -44,19 +44,33 @@ export const RegisterForm:React.FC<SignupProp> = ({ logoClass }) => {
                 <Label className="col-form-label">{PasswordSignUp}</Label>
                 <div className="position-relative">
                   <Field className="form-control" name="password" type={show ? "text" : "password"} required placeholder="*********" />
-                  <div className="show-hide" onClick={() => setShow(!show)}><span className="show"></span></div>
+                  <div className="show-hide" onClick={() => setShow(!show)}>
+                    <span className="show"></span>
+                  </div>
                 </div>
               </FormGroup>
               <FormGroup className="mb-0">
                 <div className="checkbox p-0">
                   <Input id="checkbox1" type="checkbox" />
-                  <Label className="text-muted" htmlFor="checkbox1">{AgreeWithSignUp}<Link className="ms-2" href={Href}>{PrivacyPolicy}</Link></Label>
+                  <Label className="text-muted" htmlFor="checkbox1">
+                    {AgreeWithSignUp}
+                    <Link className="ms-2" href={Href}>
+                      {PrivacyPolicy}
+                    </Link>
+                  </Label>
                 </div>
-                <Button block color="primary" className="w-100">{CreateAccount}</Button>
+                <Button block color="primary" className="w-100">
+                  {CreateAccount}
+                </Button>
               </FormGroup>
               <h6 className="text-muted mt-4 or">{OrSignUpWith}</h6>
               <OtherWay />
-              <p className="mt-4 mb-0 text-center">{AlreadyHaveAnAccount}<Link className="ms-2" href="/others/authentication/loginsimple">{AuthSignIn}</Link></p>
+              <p className="mt-4 mb-0 text-center">
+                {AlreadyHaveAnAccount}
+                <Link className="ms-2" href="/others/authentication/loginsimple">
+                  {AuthSignIn}
+                </Link>
+              </p>
             </Form>
           )}
         </Formik>

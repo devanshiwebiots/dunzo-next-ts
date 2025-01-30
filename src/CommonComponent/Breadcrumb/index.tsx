@@ -19,7 +19,7 @@ const Breadcrumbs: React.FC<propsTypes> = (props) => {
           <Col sm="6" className="p-0">
             <Breadcrumb>
               <BreadcrumbItem>
-                <Link href="/dashboard/default">
+                <Link href="/dashboard/ecommerce">
                   <SVG className="stroke-icon" iconId="stroke-home" />
                 </Link>
               </BreadcrumbItem>

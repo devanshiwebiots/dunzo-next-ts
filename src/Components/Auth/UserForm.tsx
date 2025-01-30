@@ -37,7 +37,7 @@ const UserForm = () => {
   return (
     <div>
       <div>
-        <Link className="logo" href="/dashboard/default">
+        <Link className="logo" href="/dashboard/ecommerce">
           <Image priority width={100} height={34} className="img-fluid for-light" src={imageOne} alt="login page" />
           <Image priority width={100} height={34} className="img-fluid for-dark" src={imageTwo} alt="login page" />
         </Link>
@@ -45,7 +45,7 @@ const UserForm = () => {
       <div className="login-main">
         <Form className="theme-form" onSubmit={(event) => formSubmitHandle(event)}>
           <h4>{SignInToAccount}</h4>
-          <p>{'Enter your email & password to login'}</p>
+          <p>{"Enter your email & password to login"}</p>
           <FormGroup>
             <Label className="col-form-label">{EmailAddress}</Label>
             <Input type="email" defaultValue={email} onChange={(event) => setEmail(event.target.value)} placeholder="Test123@gmail.com" />
@@ -62,17 +62,26 @@ const UserForm = () => {
           <div className="form-group mb-0">
             <div className="checkbox p-0">
               <Input id="checkbox1" type="checkbox" />
-              <Label className="text-muted" htmlFor="checkbox1">{RememberPassword}</Label>
+              <Label className="text-muted" htmlFor="checkbox1">
+                {RememberPassword}
+              </Label>
             </div>
-            <Link className="link" href={Href}>{ForgotPassword}?</Link>
+            <Link className="link" href={Href}>
+              {ForgotPassword}?
+            </Link>
             <div className="text-end mt-3">
-              <Button type='submit' color="primary" block>{SignIn}</Button>
+              <Button type="submit" color="primary" block>
+                {SignIn}
+              </Button>
             </div>
           </div>
           <h6 className="text-muted mt-4 or">{OrSignInWith}</h6>
           <UserSocialApp />
-          <p className="mt-4 mb-0 text-center">{DontHaveAccount}
-            <Link className="ms-2" href={Href}>{CreateAccount}</Link>
+          <p className="mt-4 mb-0 text-center">
+            {DontHaveAccount}
+            <Link className="ms-2" href={Href}>
+              {CreateAccount}
+            </Link>
           </p>
         </Form>
       </div>
