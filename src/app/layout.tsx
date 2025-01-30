@@ -10,6 +10,7 @@ import { detectLanguage } from "./i18n/server";
 import SessionWrapper from "@/CommonComponent/SessionWrapper";
 import { authoption } from "./api/auth/[...nextauth]/authOption";
 import { getServerSession } from "next-auth";
+import ErrorBoundary from "@/CommonComponent/ErrorBoundry";
 
 const outfit = Outfit({
   weight: ["400", "500", "700"],
@@ -37,24 +38,26 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <I18nProvider language={lng}>
-      <html lang='en'>
+      <html lang="en">
         <head>
-          <link rel='icon' href='/assets/images/favicon.png' type='image/x-icon' />
-          <link rel='shortcut icon' href='/assets/images/favicon.png' type='image/x-icon' />
-          <link rel='preconnect' href='https://fonts.googleapis.com' />
-          <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='' />
-          <script async src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAjeJEPREBQFvAIqDSZliF0WjQrCld-Mh0'></script>
+          <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon" />
+          <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+          <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjeJEPREBQFvAIqDSZliF0WjQrCld-Mh0"></script>
         </head>
         <body suppressHydrationWarning={true} className={`${outfit.variable} ${roboto.variable}`}>
-          <NoSsr>
-            <SessionWrapper session={session}>
-              <MainProvider>
-                <NextTopLoader color='#307EF3' showSpinner={false} />
-                {children}
-              </MainProvider>
-              <ToastContainer />
-            </SessionWrapper>
-          </NoSsr>
+          <ErrorBoundary>
+            <NoSsr>
+              <SessionWrapper session={session}>
+                <MainProvider>
+                  <NextTopLoader color="#307EF3" showSpinner={false} />
+                  {children}
+                </MainProvider>
+                <ToastContainer />
+              </SessionWrapper>
+            </NoSsr>
+          </ErrorBoundary>
         </body>
       </html>
     </I18nProvider>
