@@ -62,8 +62,8 @@ export const LeftHeaderData = [
       },
       {
         id: 8,
-        link: "/bonus_ui/reactstrap_carousel",
-        text: "Owl Carousel",
+        link: "/bonus_ui/carousel",
+        text: "Carousel",
       },
       {
         id: 9,
