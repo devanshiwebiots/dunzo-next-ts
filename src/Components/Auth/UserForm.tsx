@@ -28,7 +28,7 @@ const UserForm = () => {
   
     if (result?.ok) {
       toast.success("successfully Logged in Rediract......")
-      router.push("/dashboard/ecommerce");
+      router.push(result.url || "/dashboard/default");
     } else {     
       toast.error("Invalid Credential...");
     }
@@ -37,7 +37,7 @@ const UserForm = () => {
   return (
     <div>
       <div>
-        <Link className="logo" href="/dashboard/ecommerce">
+        <Link className="logo" href="/dashboard/default">
           <Image priority width={100} height={34} className="img-fluid for-light" src={imageOne} alt="login page" />
           <Image priority width={100} height={34} className="img-fluid for-dark" src={imageTwo} alt="login page" />
         </Link>
