@@ -4,9 +4,9 @@ import { Col, InputGroup, Label, Row } from "reactstrap";
 import { PreloadingDates } from "@/Constant/constant";
 
 const DatePickerComponentLast = () => {
-  const [startDate, setStartDate] = useState(new Date());
+  const [startDate, setStartDate] = useState<Date | null>(new Date());
 
-  const handleChange = (date: Date) => {
+  const handleChange = (date: Date | null) => {
     setStartDate(date);
   };
   

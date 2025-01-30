@@ -43,45 +43,6 @@ const IncomeOption: ApexOptions = {
       },
     },
   },
-  // responsive: [
-  //   {
-  //     breakpoint: 1700,
-  //     options: {
-  //       chart: {
-  //         height: 86,
-  //       },
-  //     },
-  //   },
-  //   {
-  //     breakpoint: 1699,
-  //     options: {
-  //       chart: {
-  //         height: 95,
-  //       },
-  //     },
-  //   },
-  //   {
-  //     breakpoint: 1460,
-  //     options: {
-  //       grid: {
-  //         padding: {
-  //           top: 0,
-  //           right: 0,
-  //           bottom: 0,
-  //           left: 5,
-  //         },
-  //       },
-  //     },
-  //   },
-  //   {
-  //     breakpoint: 376,
-  //     options: {
-  //       chart: {
-  //         height: 50,
-  //       },
-  //     },
-  //   },
-  // ],
 };
 
 const ExpenseOptions: ApexOptions = {
@@ -277,16 +238,6 @@ export const ProductOptions: ApexOptions = {
       },
     ],
   },
-  // responsive: [
-  //   {
-  //     breakpoint: 1440,
-  //     options: {
-  //       chart: {
-  //         height: 330,
-  //       },
-  //     },
-  //   },
-  // ],
 };
 
 export const RecentOrders = [
@@ -375,24 +326,7 @@ export const SalesOptions: ApexOptions = {
     },
   },
   colors: ["#307EF3", "#EBA31D", "#DC3545", "#53a653"],
-  // responsive: [
-  //   {
-  //     breakpoint: 1660,
-  //     options: {
-  //       chart: {
-  //         height: 280,
-  //       },
-  //     },
-  //   },
-  //   {
-  //     breakpoint: 1500,
-  //     options: {
-  //       chart: {
-  //         height: 250,
-  //       },
-  //     },
-  //   },
-  // ],
+
   legend: {
     show: false,
   },
@@ -606,16 +540,6 @@ export const SalesOverviewOptions: ApexOptions = {
       show: false,
     },
   },
-  // responsive: [
-  //   {
-  //     breakpoint: 1440,
-  //     options: {
-  //       chart: {
-  //         height: 220,
-  //       },
-  //     },
-  //   },
-  // ],
 };
 
 export const ActiveTasksData = [
@@ -653,24 +577,6 @@ export const InvestmentOptions: ApexOptions = {
   legend: {
     show: false,
   },
-  // responsive: [
-  //   {
-  //     breakpoint: 1500,
-  //     options: {
-  //       chart: {
-  //         height: 180,
-  //       },
-  //     },
-  //   },
-  //   {
-  //     breakpoint: 1441,
-  //     options: {
-  //       chart: {
-  //         height: 200,
-  //       },
-  //     },
-  //   },
-  // ],
   plotOptions: {
     pie: {
       expandOnClick: false,
@@ -903,16 +809,6 @@ export const OfflineOptions = {
       },
     ],
   },
-  // responsive: [
-  //   {
-  //     breakpoint: 1661,
-  //     options: {
-  //       chart: {
-  //         height: 140,
-  //       },
-  //     },
-  //   },
-  // ],
 };
 
 export const RevenueOptions = {
@@ -1163,32 +1059,6 @@ export const CategoriesOptions: ApexOptions = {
   legend: {
     show: false,
   },
-  // responsive: [
-  //   {
-  //     breakpoint: 1700,
-  //     options: {
-  //       chart: {
-  //         height: 150,
-  //       },
-  //     },
-  //   },
-  //   {
-  //     breakpoint: 1441,
-  //     options: {
-  //       chart: {
-  //         height: 205,
-  //       },
-  //     },
-  //   },
-  //   {
-  //     breakpoint: 421,
-  //     options: {
-  //       chart: {
-  //         height: 170,
-  //       },
-  //     },
-  //   },
-  // ],
   plotOptions: {
     pie: {
       expandOnClick: false,
@@ -1273,16 +1143,6 @@ export const TotalProjectOptions: ApexOptions = {
       enabled: true,
     },
   },
-  // responsive: [
-  //   {
-  //     breakpoint: 1661,
-  //     options: {
-  //       chart: {
-  //         height: 340,
-  //       },
-  //     },
-  //   },
-  // ],
   grid: {
     strokeDashArray: 3,
     position: "back",
@@ -1980,74 +1840,6 @@ export const ProgressOptions: ApexOptions = {
         }
       },
   },
-  // responsive: [{
-  //     breakpoint: 1661,
-  //     options: {
-  //         chart: {
-  //             height: 280
-  //         },
-  //     },
-  // }, {
-  //     breakpoint: 1581,
-  //     options: {
-  //         chart: {
-  //             height: 250
-  //         },
-  //     },
-  // }, {
-  //     breakpoint: 1471,
-  //     options: {
-  //         chart: {
-  //             height: 242
-  //         },
-  //     },
-  // }, {
-  //     breakpoint: 1441,
-  //     options: {
-  //         chart: {
-  //             height: 300
-  //         },
-  //     },
-  // },
-  // {
-  //     breakpoint: 1301,
-  //     options: {
-  //         chart: {
-  //             height: 250
-  //         },
-  //     },
-  // },
-  // {
-  //     breakpoint: 1200,
-  //     options: {
-  //         chart: {
-  //             height: 300
-  //         },
-  //     },
-  // }, {
-  //     breakpoint: 1140,
-  //     options: {
-  //         chart: {
-  //             height: 250
-  //         },
-  //     },
-  // }, {
-  //     breakpoint: 992,
-  //     options: {
-  //         chart: {
-  //             height: 300
-  //         },
-  //     },
-  // },
-  // {
-  //     breakpoint: 821,
-  //     options: {
-  //         chart: {
-  //             height: 270
-  //         },
-  //     },
-  // },
-  // ],
   colors: ["#307EF3"],
   labels: ['Progress'],
 };

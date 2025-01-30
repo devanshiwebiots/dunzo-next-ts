@@ -1276,8 +1276,8 @@ export const AjaxRequestMovies: string = "AJAX Request Movie";
 export const MovieMode: string = "Movie mode";
 export const AutoCloseTimerTitle: string = "Auto Close Timer";
 
-//Bonus Ui - OwlCarousel
-export const ReactstrapCarousel: string = "Reactstrap Carousel";
+//Bonus Ui - Carousel
+export const ReactstrapCarousel: string = "Carousel";
 export const SlideOnly: string = "Slides Only";
 export const WithControl: string = "With Controls";
 export const AutoPlayVariants: string = "Auto Play Variant";

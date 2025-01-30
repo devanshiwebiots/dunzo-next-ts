@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { Days, Hours, Minutes, Seconds } from "@/Constant/constant";
 import { CountdownDataProp } from "@/Types/AuthType";
 import Countdown from "react-countdown";

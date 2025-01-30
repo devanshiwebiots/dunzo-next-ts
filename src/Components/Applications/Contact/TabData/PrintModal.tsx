@@ -5,22 +5,22 @@ import { Cancel, Print, PrintViews } from "@/Constant/constant";
 import PrintPreview from "./PrintPreview";
 import { PrintModalPropsTypes } from "@/Types/ContactType";
 
-const PrintModal :React.FC<PrintModalPropsTypes> = ({ printModal, selectedUser, toggleCallback }) => {
-  const componentRef = useRef<HTMLDivElement | null>(null);
+const PrintModal: React.FC<PrintModalPropsTypes> = ({ printModal, selectedUser, toggleCallback }) => {
+  const contentRef = useRef<HTMLDivElement | null>(null);
 
   const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
+    contentRef,
   });
 
   const printModalToggle = () => {
-    toggleCallback(false)
-    handlePrint()
+    toggleCallback(false);
+    handlePrint();
   };
 
-  const closePrintModal =()=>{
-    toggleCallback(false)
-  }
-  
+  const closePrintModal = () => {
+    toggleCallback(false);
+  };
+
   return (
     <Modal className="modal-bookmark" isOpen={printModal} toggle={printModalToggle}>
       <div className="modal-header">
@@ -28,9 +28,13 @@ const PrintModal :React.FC<PrintModalPropsTypes> = ({ printModal, selectedUser, 
         <Button close color="transparent" onClick={printModalToggle}></Button>
       </div>
       <ModalBody className="list-persons">
-        <PrintPreview selectedUser={selectedUser} ref={componentRef} />
-        <Button color="secondary" className="me-1" onClick={printModalToggle}>{Print}</Button>
-        <Button color="primary" onClick={closePrintModal}>{Cancel}</Button>
+        <PrintPreview selectedUser={selectedUser} ref={contentRef} />
+        <Button color="secondary" className="me-1" onClick={printModalToggle}>
+          {Print}
+        </Button>
+        <Button color="primary" onClick={closePrintModal}>
+          {Cancel}
+        </Button>
       </ModalBody>
     </Modal>
   );

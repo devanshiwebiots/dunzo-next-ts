@@ -38,9 +38,6 @@
 //react-image-crop
 @import 'react-image-crop/src/ReactCrop.scss';
 
-//react-vertical-timeline-component
-@import 'react-vertical-timeline-component/style.min.css';
-
 //photoswipe
 @import 'photoswipe/dist/photoswipe.css';
 
@@ -65,4 +62,11 @@
 
 //tour
 @import "@sjmc11/tourguidejs/src/scss/tour.scss";
+
+//swiper
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+@import "swiper/css/grid";
+@import "swiper/css/effect-fade";
 

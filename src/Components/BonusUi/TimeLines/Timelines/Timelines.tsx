@@ -1,7 +1,6 @@
 import { Card, CardBody, Col } from "reactstrap";
 import { TimelineTitle } from "@/Constant/constant";
 import AppIdeasTimeline from "./AppIdeasTimeline";
-import { VerticalTimeline } from "react-vertical-timeline-component";
 import BlogTimeline from "./BlogTimeline";
 import { TimeLineData } from "@/Data/BonusUi/Timeline/TimelineData";
 import CarouselTimeline from "./CarouselTimeline";
@@ -16,14 +15,14 @@ const Timelines = () => {
       <Card>
         <CommonCardHeader title={TimelineTitle} subTitle={TimeLineData} />
         <CardBody className="default-timeline">
-          <VerticalTimeline animate>
+          <section className="cd-container" id="cd-timeline">
             <AppIdeasTimeline />
             <BlogTimeline />
             <CarouselTimeline />
             <AutoTestingTimeline />
             <MeetUpTimeline />
             <ResolutionTimeline />
-          </VerticalTimeline>
+          </section>
         </CardBody>
       </Card>
     </Col>

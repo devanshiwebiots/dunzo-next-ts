@@ -8,15 +8,20 @@ import InvoiceFourTable from "./InvoiceFourTable";
 import InvoiceTotal from "./InvoiceTotal";
 import CommonInvoiceSign from "../Common/InvoiceSign";
 import Print from "../Common/Print";
+import { useReactToPrint } from "react-to-print";
 
 const InvoiceFourContainer = () => {
-  const componentRef = useRef<HTMLDivElement | null>(null);
+   const contentRef = useRef<HTMLDivElement | null>(null);
+
+   const handlePrint = useReactToPrint({
+     contentRef,
+   });
 
   return (
     <>
       <Breadcrumbs pageTitle={InvoiceTitle} parent={ECommerce} title={InvoiceTitle} />
       <Container className="invoice-4">
-        <div ref={componentRef}>
+        <div ref={contentRef}>
           <Table style={{ width: "100%", margin: "0, auto" }} borderless>
             <tbody>
               <tr>
@@ -37,7 +42,7 @@ const InvoiceFourContainer = () => {
               <tr style={{ width: "100%", display: "flex", justifyContent: "space-between" }}>
                 <CommonInvoiceSign />
                 <td>
-                  <Print componentRef={componentRef} />
+                  <Print handlePrint={handlePrint} />
                 </td>
               </tr>
             </tbody>

@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+//@ts-nocheck
 import { DealOfTheDay, ImagePath, SpecialDiscount } from "@/Constant/constant";
 import { DiscountCardData, DiscountSliderOptions } from "@/Data/General/Dashboard/DashboardData";
 import Countdown from "react-countdown";

@@ -7,15 +7,20 @@ import InvoiceClientDetail from "./InvoiceClientDetail";
 import InvoiceThreeTable from "./InvoiceThreeTable";
 import InvoiceBankTransfer from "./InvoiceBankTransfer";
 import Print from "../Common/Print";
+import { useReactToPrint } from "react-to-print";
 
 const InvoiceThreeContainer = () => {
-  const componentRef = useRef<HTMLDivElement | null>(null);
+   const contentRef = useRef<HTMLDivElement | null>(null);
+
+   const handlePrint = useReactToPrint({
+     contentRef,
+   });
 
   return (
     <>
       <Breadcrumbs pageTitle={InvoiceTitle} parent={ECommerce} title={InvoiceTitle} />
       <Container className="invoice-3">
-        <div ref={componentRef}>
+        <div ref={contentRef}>
           <Table style={{ width: "1160px", margin: "0, auto" }} borderless>
             <tbody>
               <tr>
@@ -42,7 +47,7 @@ const InvoiceThreeContainer = () => {
               </tr>
               <tr>
                 <td>
-                  <Print componentRef={componentRef} />
+                  <Print handlePrint={handlePrint} />
                 </td>
               </tr>
             </tbody>

@@ -6,9 +6,14 @@ import Breadcrumbs from "@/CommonComponent/Breadcrumb";
 import { ECommerce, InvoiceTitle } from "@/Constant/constant";
 import Invoice6Button from "./Invoice6Button";
 import { useRef } from "react";
+import { useReactToPrint } from "react-to-print";
 
 const InvoiceSixContainer = () => {
-  const componentRef = useRef<HTMLDivElement | null>(null);
+  const contentRef = useRef<HTMLDivElement | null>(null);
+
+  const handlePrint = useReactToPrint({
+    contentRef,
+  });
 
   return (
     <>
@@ -18,14 +23,14 @@ const InvoiceSixContainer = () => {
           <Col sm="12">
             <Card>
               <CardBody>
-                <div ref={componentRef} className="invoice">
+                <div ref={contentRef} className="invoice">
                   <div>
                     <InvoiceSixHeader />
                     <hr />
                     <UserDetails />
                     <InvoiceSixTable />
                   </div>
-                  <Invoice6Button componentRef={componentRef} />
+                  <Invoice6Button handlePrint={handlePrint} />
                 </div>
               </CardBody>
             </Card>

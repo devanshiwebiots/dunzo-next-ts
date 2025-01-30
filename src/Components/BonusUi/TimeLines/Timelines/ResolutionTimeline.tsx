@@ -1,22 +1,28 @@
-import { MyResolutions, MyResolutionsFor2024, Resolutions } from "@/Constant/constant";
-import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import { MyResolutions, Resolutions } from "@/Constant/constant";
 import { Badge } from "reactstrap";
 
 const ResolutionTimeline = () => {
   const ResolutionText: string = "I'm determined to streamline, organism, systematism, realign, and embrace life in 2024.";
 
   return (
-    <VerticalTimelineElement className="vertical-timeline-element--work" date="December 31 2022" icon={<i className="icon-agenda"></i>} iconClassName="cd-timeline-img cd-movie bg-danger">
-      <div className="timeline-wrapper">
-        <Badge color="warning">{Resolutions}</Badge>
+    <div className="cd-timeline-block">
+      <div className="cd-timeline-img cd-movie bg-danger is-hidden">
+        <i className="icon-agenda" />
       </div>
-      <h4 className="m-0 vertical-timeline-element-subtitle">{MyResolutionsFor2024}</h4>
-      <p className="mb-0">{ResolutionText}</p>
-      <div className="time-content pt-2">
-        <i className="icon-write"></i>
-        <h5>{MyResolutions}</h5>
+      <div className="cd-timeline-content is-hidden">
+        <div className="vertical-timeline-element--work text-start">
+          <div className="timeline-wrapper">
+            <Badge color="warning">{Resolutions}</Badge>
+          </div>
+          <h4 className="m-0 vertical-timeline-element-subtitle">My Resolutions for 2025</h4>
+          <p className="mb-0">{ResolutionText}</p>
+          <div className="time-content pt-2">
+            <i className="icon-write"></i>
+            <h5>{MyResolutions}</h5>
+          </div>
+        </div>
       </div>
-    </VerticalTimelineElement>
+    </div>
   );
 };
 export default ResolutionTimeline;

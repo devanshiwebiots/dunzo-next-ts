@@ -1,24 +1,28 @@
 import { BlogTimelineTitle, ImplementedTheProgramForWeeklyCodeChallenges } from "@/Constant/constant";
-import { VerticalTimelineElement } from "react-vertical-timeline-component";
-import { Badge } from "reactstrap";
 
 const BlogTimeline = () => {
   const BlogTextTime: string = "help you build problem-solving skills, better understand the programming. ";
   const BlogTime: string = "If you want to improve your skills in programming.";
 
   return (
-    <VerticalTimelineElement className="vertical-timeline-element--work" date="March 12 2022" icon={<i className="icon-youtube"></i>} iconClassName="cd-timeline-img bg-danger">
-      <div className="timeline-wrapper">
-        <Badge color="danger">{BlogTimelineTitle}</Badge>
+    <div className="cd-timeline-block">
+      <div className="cd-timeline-img bg-danger">
+        <i className="icon-youtube" />
       </div>
-      <h4 className="m-0 vertical-timeline-element-subtitle">{ImplementedTheProgramForWeeklyCodeChallenges}</h4>
-      <p className="mb-0">
-        Challenges <em className="txt-danger">{BlogTextTime}</em>{BlogTime}
-      </p>
-      <div className="ratio ratio-21x9 m-t-20">
-        <iframe src="https://www.youtube.com/embed/sqRk0Ly66Ps" title="myFrame" allowFullScreen></iframe>
+      <div className="cd-timeline-content">
+        <div className="timeline-wrapper">
+          <div className="badge bg-danger">{BlogTimelineTitle}</div>
+        </div>
+        <h5 className="f-w-500 m-0">{ImplementedTheProgramForWeeklyCodeChallenges}</h5>
+        <p className="mb-0">
+          Challenges <em className="txt-danger">{BlogTextTime}</em>
+        </p>
+        <div className="ratio ratio-21x9 m-t-20">
+          <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowFullScreen />
+        </div>
+        <span className="cd-date">March 12 2024</span>
       </div>
-    </VerticalTimelineElement>
+    </div>
   );
 };
 export default BlogTimeline;

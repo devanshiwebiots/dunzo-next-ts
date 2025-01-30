@@ -38,11 +38,7 @@
     border-radius: 10px;
   }
   /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  // * {
-  //   scrollbar-width: auto;
-  //   scrollbar-color: #e0ddff #ffffff; 
-  // }
+
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 6px;
@@ -101,7 +97,6 @@
       align-items: center;
       flex-wrap: wrap;
       padding: 0;
-      // justify-content: center;
       .nav-item {
         .nav-link {
           color: var(--body-font-color);
@@ -264,11 +259,6 @@
       display: none;
     }
   }
-  // &.open-contacts {
-  //   @media (min-width:1200px) and (max-width:1920px) {
-  //     display: none;
-  //   }
-  // }
 }
 // ===============================================
 .search-contacts {
@@ -586,9 +576,6 @@
       padding: 0;
     }
     .chat-icon {
-      // display: flex;
-      // flex-direction: column;
-      // gap: 10px;
       position: absolute;
       left: -15px !important;
       bottom: 22px !important;
@@ -710,11 +697,6 @@
   .fg-emoji-nav {
     background-color: var(--chart-text-color);
   }
-  // .fg-picker-special-buttons {
-  //   .fg-emoji-picker-close-button {
-  //     background-color: var(--text-gray);
-  //   }
-  // }
   #fg-emoji-picker-move {
     display: none;
   }
