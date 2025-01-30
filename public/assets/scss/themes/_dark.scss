@@ -16,6 +16,50 @@ body {
 				}
 			}
 		}
+		.right-sidebar-chat {
+			.msger-inputarea {
+				.EmojiPickerReact {
+					background-color: $dark-body-background !important;
+					border-color: $dark-card-border !important;
+				}	
+			}
+		}
+		.epr-emoji-category {
+			color: $white;
+			background-color: $dark-body-background !important;
+		}
+		.msger-inputarea {
+			.epr-search-container {
+				input {
+					background-color: $dark-body-background !important;
+					color: $white !important; 
+				}
+			}
+		}
+		.epr-main {
+			.epr-body {
+				.epr-emoji-list {
+					.epr-emoji-category {
+						h2 {
+							color: $white;
+							background-color: $dark-body-background !important;
+							border-color: $dark-card-border !important;
+						}
+					}
+				}
+			}
+		}
+		.rmdp-ep-arrow {
+			border-color: $dark-card-border !important;
+		}
+		.rmdp-header-values {
+			color: $white; 
+		} 
+		.rmdp-day {
+			span {
+				color: $white;
+			}
+		}
 		.modal-fullscreen {
 			.large-modal-header {
 				svg {
