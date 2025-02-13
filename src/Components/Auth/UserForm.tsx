@@ -20,15 +20,15 @@ const UserForm = () => {
   const formSubmitHandle = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();                                                                                  
     const result = await signIn("credentials", {
-      email,   
-      password,  
+      email,
+      password,
       redirect: false,
       callbackUrl: "/dashboard/ecommerce",
     });
   
     if (result?.ok) {
       toast.success("successfully Logged in Rediract......")
-      router.push(result.url || "/dashboard/default");
+      router.push(result.url || "/dashboard/ecommerce");
     } else {     
       toast.error("Invalid Credential...");
     }
