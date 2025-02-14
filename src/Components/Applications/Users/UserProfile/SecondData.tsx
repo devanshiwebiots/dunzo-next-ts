@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { Href, ImagePath } from "@/Constant/constant";
-import React, { MutableRefObject } from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import { Card, Col, Row } from "reactstrap";
 import CommonUserFooter from "./Common/CommonUserFooter";
@@ -25,7 +24,7 @@ const SecondData = () => {
                     <Item original={`${ImagePath}/other-images/profile-style-img.png`} width="1600" height="600" caption="Image Caption 1">
                       {({ ref, open }) => (
                         <a href={Href} onClick={open}>
-                          <img className="img-fluid rounded" ref={ref as unknown as MutableRefObject<HTMLImageElement>} src={`${ImagePath}/other-images/profile-style-img.png`} alt="image" />
+                          <img className="img-fluid rounded" ref={ref} src={`${ImagePath}/other-images/profile-style-img.png`} alt="image" />
                         </a>
                       )}
                     </Item>

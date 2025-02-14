@@ -22,7 +22,7 @@ const ForthData = () => {
                     <Item original={`${ImagePath}/blog/img.png`} width="1600" height="800" caption="Image Caption 1">
                       {({ ref, open }) => (
                         <a href={Href} onClick={open}>
-                          <img className="img-fluid rounded" ref={ref as unknown as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/blog/img.png`} alt="image" />
+                          <img className="img-fluid rounded" ref={ref} src={`${ImagePath}/blog/img.png`} alt="image" />
                         </a>
                       )}
                     </Item>
