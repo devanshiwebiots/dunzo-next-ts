@@ -11,8 +11,8 @@ export default function InvoiceSixHeader() {
         <Col sm="6">
           <div className="d-flex">
             <div className="media-left">
-              <Image width={120} height={38} className="media-object img-80 img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="logo" priority />
-              <Image width={120} height={38} className="media-object img-80 img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt="logo" priority/>
+              <Image width={120} height={38} className="media-object img-80 img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="logo" priority unoptimized/>
+              <Image width={120} height={38} className="media-object img-80 img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt="logo" priority unoptimized/>
             </div>
             <div className="flex-grow-1 m-l-20 text-right">
               <h3 className="media-heading">{"Dunzo"} </h3>

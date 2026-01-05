@@ -18,7 +18,7 @@ export const RecentOrderTableBody = () => {
           <td>
             <div className="d-flex">
               <div className="flex-shrink-0">
-                <Image priority width={38} height={38} src={`${ImagePath}/dashboard/user/${order.id}.png`} alt="" />
+                <Image priority width={38} height={38} src={`${ImagePath}/dashboard/user/${order.id}.png`} alt="" unoptimized/>
               </div>
               <div className="flex-grow-1 ms-2">
                 <a href="user-profile.html">

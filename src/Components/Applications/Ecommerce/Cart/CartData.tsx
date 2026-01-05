@@ -26,7 +26,7 @@ export const CartData = () => {
               <tbody>
                 {cart.map((item, index) => (
                   <tr key={index}>
-                    <td><Image width={40} height={40} className="img-fluid img-40" src={`${ImagePath}/ecommerce/${item.image}`} alt={Href} priority /></td>
+                    <td><Image width={40} height={40} className="img-fluid img-40" src={`${ImagePath}/ecommerce/${item.image}`} alt={Href} priority unoptimized/></td>
                     <td><div className="product-name"><a href={Href}>{item.name}</a></div></td>
                     <td>{symbol}{item.price}</td>
                     <CartQuantityButton item={item} />

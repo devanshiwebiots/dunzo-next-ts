@@ -23,7 +23,7 @@ const NewOrders = () => {
             <Col xxl="4" md="6" key={index}>
               <div className="prooduct-details-box">
                 <div className="d-flex">
-                  <Image width={60} height={60} className="align-self-center ms-3 rounded-3 img-fluid img-70" src={`${ImagePath}/ecommerce/${item.image}`} alt={item.name} priority/>
+                  <Image width={60} height={60} className="align-self-center ms-3 rounded-3 img-fluid img-70" src={`${ImagePath}/ecommerce/${item.image}`} alt={item.name} priority unoptimized/>
                   <div className="flex-grow-1 ms-3">
                     <div className="product-name">
                       <h6><a href={Href}>{item.name}</a></h6>

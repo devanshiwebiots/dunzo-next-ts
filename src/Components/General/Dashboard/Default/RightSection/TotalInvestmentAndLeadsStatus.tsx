@@ -41,7 +41,7 @@ export const TotalInvestmentAndLeadsStatus = () => {
                 <ul key={item.id}>
                   {item.child.map((list) => (
                     <li className={list.class} key={list.id}>
-                      {list.image && <Image priority width={20} height={20} src={`${ImagePath}/dashboard/user/${list.image}`} alt="" />}
+                      {list.image && <Image priority width={20} height={20} src={`${ImagePath}/dashboard/user/${list.image}`} alt="" unoptimized/>}
                       {list.text}
                     </li>
                   ))}

@@ -14,7 +14,7 @@ export const JustifytabContent:React.FC<TabContentProp> = ({ basicTab }) => {
               {items.map(({ src, title, number }, index) => (
                 <div className="designer-profile" key={index}>
                   <div className="designer-wrap">
-                    <Image priority width={50} height={50} className="designer-img" src={`${ImagePath}/${src}`} alt="profile" />
+                    <Image priority width={50} height={50} className="designer-img" src={`${ImagePath}/${src}`} alt="profile" unoptimized/>
                     <div className="designer-content">
                       <h6>{title}</h6>
                       <p> {number}</p>

@@ -12,11 +12,11 @@ export const SizesCart = () => {
         <CardBody className="avatar-showcase">
           <div className="avatars">
             <div className="avatar">
-              <Image priority width={100} height={100} className="img-100 rounded-circle" src={`${ImagePath}/avtar/3.jpg`} alt="image" />
+              <Image priority width={100} height={100} className="img-100 rounded-circle" src={`${ImagePath}/avtar/3.jpg`} alt="image" unoptimized/>
             </div>
             {SizeImages.map((item, index) => (
               <div className="avatar" key={index}>
-                <Image priority width={item.size} height={item.size} className={`${item.className} rounded-circle`} src={`${ImagePath}${item.src}`} alt="image" />
+                <Image priority width={item.size} height={item.size} className={`${item.className} rounded-circle`} src={`${ImagePath}${item.src}`} alt="image" unoptimized/>
               </div>
             ))}
           </div>

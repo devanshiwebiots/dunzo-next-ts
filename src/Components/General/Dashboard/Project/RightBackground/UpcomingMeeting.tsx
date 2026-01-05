@@ -20,7 +20,7 @@ export const UpcomingMeeting = () => {
           </div>
           <div className="today-weather mt-3">
             <div className="d-flex">
-              <Image priority width={38} height={38} src={`${ImagePath}/dashboard-3/sun.gif`} alt="user" />
+              <Image priority width={38} height={38} src={`${ImagePath}/dashboard-3/sun.gif`} alt="user" unoptimized/>
               <span>{TodaySanFransico}</span>
               <div className="flex-grow-1">
                 <h6>{"Jun,07 "}</h6>

@@ -90,7 +90,7 @@
 
 .calendar-default {
   .form-check-input {
-    &::focus {
+    &:focus {
       box-shadow: unset !important;
       border: none !important; 
     }

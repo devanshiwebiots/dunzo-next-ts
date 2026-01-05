@@ -20,7 +20,7 @@ const ListNewContact :React.FC<ListNewContactPropsType> = ({ users, userCallback
                 <NavItem id="myTab" key={index} >
                   <NavLink className={dynamicTab === index ? 'active' : ''} onClick={() => setDynamicTab(index)} >
                     <div className="d-flex" onClick={() => ContactDetails(user)}>
-                      <Image width={50} height={50} className= 'p-0 img-fluid img-50 m-r-20 rounded-circle update_img_0' src= {`${user.avatar}`} alt= 'userImage' priority  />
+                      <Image width={50} height={50} className= 'p-0 img-fluid img-50 m-r-20 rounded-circle update_img_0' src= {`${user.avatar}`} alt= 'userImage' priority  unoptimized/>
                       <div className='flex-grow-1'>
                         <h6>
                           <span className="first_name_0">{user.name}</span>

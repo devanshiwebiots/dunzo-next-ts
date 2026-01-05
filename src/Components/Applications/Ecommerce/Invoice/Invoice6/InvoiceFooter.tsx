@@ -16,7 +16,7 @@ export default function InvoiceFooter() {
       </Col>
       <Col md="4">
         <Form className="text-end">
-          <Image width={170} height={32} src={`${ImagePath}/other-images/paypal.png`} alt="PayPal" priority />
+          <Image width={170} height={32} src={`${ImagePath}/other-images/paypal.png`} alt="PayPal" priority unoptimized/>
         </Form>
       </Col>
     </Row>

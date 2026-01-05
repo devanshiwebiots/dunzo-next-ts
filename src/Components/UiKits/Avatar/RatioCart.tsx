@@ -12,11 +12,11 @@ const RatioCart = () => {
         <CardBody className="avatar-showcase">
           <div className="avatars">
             <div className="avatar ratio">
-              <Image priority width={100} height={100} className="b-r-8 img-100" src={`${ImagePath}/avtar/11.jpg`} alt="image" />
+              <Image priority width={100} height={100} className="b-r-8 img-100" src={`${ImagePath}/avtar/11.jpg`} alt="image" unoptimized/>
             </div>
             {Ratios.map(({ className, src, size}, index) => (
               <div className="avatar ratio" key={index}>
-                <Image priority width={size} height={size} className={`b-r-8 ${className}`} src={`${ImagePath}${src}`} alt="image" />
+                <Image priority width={size} height={size} className={`b-r-8 ${className}`} src={`${ImagePath}${src}`} alt="image" unoptimized/>
               </div>
             ))}
           </div>

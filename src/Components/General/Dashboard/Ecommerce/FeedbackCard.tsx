@@ -30,7 +30,7 @@ export const FeedbackCard = () => {
             <ul>
               {DynamicNumber(4).map((item, index) => (
                 <li className="d-inline-block" key={index}>
-                  <Image priority width={59} height={59} className="rounded-circle" src={`${ImagePath}/dashboard-2/user/${item}.png`} alt="user" />
+                  <Image priority width={59} height={59} className="rounded-circle" src={`${ImagePath}/dashboard-2/user/${item}.png`} alt="user" unoptimized/>
                 </li>
               ))}
             </ul>

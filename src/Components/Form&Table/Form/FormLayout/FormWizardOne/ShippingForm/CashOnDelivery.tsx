@@ -15,7 +15,7 @@ const CashOnDelivery :React.FC<PaymentMethodOptionPropsType> = ({paymentMethodNa
           <p>After your order is delivered, make a cash payment</p>
         </div>
         <div>
-          <Image priority width={75} height={50} src={`${ImagePath}/forms/delivery.png`} alt="delivery"/>
+          <Image priority width={75} height={50} src={`${ImagePath}/forms/delivery.png`} alt="delivery" unoptimized/>
         </div>
       </div>
     </Col>

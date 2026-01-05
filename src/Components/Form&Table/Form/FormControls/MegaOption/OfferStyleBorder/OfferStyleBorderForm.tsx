@@ -17,7 +17,7 @@ const OfferStyleBorderForm = () => {
                     <span className="flex-grow-1">
                       <span className="d-flex list-behavior-1">
                         <span className="flex-shrink-0">
-                          <Image priority width={158} height={86} className="tab-img b-r-0 img-fluid" src={`${ImagePath}/${image}`} alt="image"/>
+                          <Image priority width={158} height={86} className="tab-img b-r-0 img-fluid" src={`${ImagePath}/${image}`} alt="image" unoptimized/>
                         </span>
                         <span className="flex-grow-1">
                           <span className="mb-0">{spanText}</span>

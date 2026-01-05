@@ -11,10 +11,10 @@ const SocialChat = () => {
       <JasonBorneMessage />
       <div className="other-msg">
       <div className="d-flex">
-          <Image priority width={50} height={50} className="img-50 img-fluid m-r-20 rounded-circle" alt="user" src={`${ImagePath}/user/2.png`}/>
+          <Image priority width={50} height={50} className="img-50 img-fluid m-r-20 rounded-circle" alt="user" src={`${ImagePath}/user/2.png`} unoptimized/>
           <div className="flex-grow-1">
             <span>Alexendra Dhadio&nbsp;<span>1 Month Ago <i className="fa fa-reply font-primary" /></span></span>
-            <p>yes, really very awesome car i see the features of this car in the official website of #Mercedes-Benz and really impressed :-)</p>
+            <p>{"yes, really very awesome car i see the features of this car in the official website of #Mercedes-Benz and really impressed :-)"}</p>
           </div>
         </div>
       </div>

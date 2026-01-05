@@ -8,7 +8,7 @@ export const ActivityLine=()=> {
     return (
         <li className="mt-0 d-flex">
             <div className="activity-line"></div>
-            <Image width={40} height={40} src={`${ImagePath}/dashboard-2/user/5.png`} alt="" />
+            <Image width={40} height={40} src={`${ImagePath}/dashboard-2/user/5.png`} alt="" unoptimized/>
             <div className="ms-2"><span>{'2hrs Ago'}</span>
                 <p>{"Today, I'm very happy about myself, because I realized my dreams."}</p>
                 <div className="recent-images">
@@ -16,7 +16,7 @@ export const ActivityLine=()=> {
                         {imageNumbers.map((item, index) => (
                             <li key={index}>
                                 <div className="recent-img-wrap">
-                                    <Image priority width={38} height={38} src={`${ImagePath}/dashboard-2/product/${item}.png`} alt="" />
+                                    <Image priority width={38} height={38} src={`${ImagePath}/dashboard-2/product/${item}.png`} alt="" unoptimized/>
                                 </div>
                             </li>
                         ))}

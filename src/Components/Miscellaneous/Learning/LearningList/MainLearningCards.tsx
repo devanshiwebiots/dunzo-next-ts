@@ -14,7 +14,7 @@ const MainLearningCards = () => {
           <Card>
             <Row className="blog-box blog-list ">
               <Col sm="5">
-                <Image priority width={600} height={450} className="img-fluid sm-100-w" src={`${ImagePath}/faq/${index + 1}.jpg`} alt="blog-image" />
+                <Image priority width={600} height={450} className="img-fluid sm-100-w" src={`${ImagePath}/faq/${index + 1}.jpg`} alt="blog-image" unoptimized/>
               </Col>
               <Col sm="7">
                 <div className="blog-details">

@@ -17,7 +17,7 @@ export const ReviewSlider = () => {
               {ReviewSliderData.map((item) => (
                 <div className="review" key={item.id}>
                   <div>
-                    <Image priority width={72} height={72} className="img-fluid" src={`${ImagePath}/dashboard/user/${item.src}`} alt="" />
+                    <Image priority width={72} height={72} className="img-fluid" src={`${ImagePath}/dashboard/user/${item.src}`} alt="" unoptimized/>
                     <div className="review-content">
                       <h2>{item.title}</h2>
                     </div>

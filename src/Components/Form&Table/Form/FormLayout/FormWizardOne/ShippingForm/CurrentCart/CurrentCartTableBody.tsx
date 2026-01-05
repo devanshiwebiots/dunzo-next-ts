@@ -8,7 +8,7 @@ const CurrentCartTableBody = () => {
       {CurrentCartData.map((data, index) => (
         <tr key={index}>
           <td>
-            <Image priority width={46} height={50} src={`${ImagePath}/${data.imagePath}`} alt="t-shirt"/>
+            <Image priority width={46} height={50} src={`${ImagePath}/${data.imagePath}`} alt="t-shirt" unoptimized/>
           </td>
           <td>
             <div >

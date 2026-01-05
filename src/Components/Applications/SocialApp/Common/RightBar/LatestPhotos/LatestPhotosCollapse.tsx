@@ -13,7 +13,7 @@ const LatestPhotosCollapse :React.FC<MyProfileClassCollapseProp> = ({ isFilter }
           {numbers.map((data, index) => (
             <li key={index}>
               <div className="latest-post">
-                <Image priority width={70} height={70} className="img-fluid" alt="user" src={`${ImagePath}/social-app/post-${data}.png`}/>
+                <Image priority width={70} height={70} className="img-fluid" alt="user" src={`${ImagePath}/social-app/post-${data}.png`} unoptimized/>
               </div>
             </li>
           ))}

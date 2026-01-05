@@ -16,7 +16,7 @@ export const RecentActivity = () => {
             <ActivityLine />
             {RecentActivityData.map((item) => (
               <li className={`d-flex ${item.id === 3 ? "align-items-baseline ms-3" : ""}`} key={item.id}>
-                {item.src && <Image priority width={40} height={40} src={`${ImagePath}/dashboard-2/user/${item.src}`} alt="" />}
+                {item.src && <Image priority width={40} height={40} src={`${ImagePath}/dashboard-2/user/${item.src}`} alt="" unoptimized/>}
                 {item.id === 3 && <div className="badge-dot-danger"></div>}
                 <div className={item.id === 3 ? "ms-4" : "ms-2"}>
                   <span>{item.dateTime}</span>

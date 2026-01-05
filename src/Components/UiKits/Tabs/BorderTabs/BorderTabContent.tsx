@@ -14,7 +14,7 @@ export const BorderTabContent:React.FC<TabContentProp> = ({basicTab}) => {
           <div className="main-inbox"> 
             <div className="header-inbox"> 
               <div className="header-left-inbox">
-                <div className="inbox-img"><Image priority width={50} height={50} src={`${ImagePath}/ecommerce/06.jpg`} alt="profile" /></div>
+                <div className="inbox-img"><Image priority width={50} height={50} src={`${ImagePath}/ecommerce/06.jpg`} alt="profile" unoptimized/></div>
                 <div className="inbox-content"> 
                   <h6>{DalbultCaslin}</h6>
                   <p className="text-muted">stroman.rogers@gmail.com</p>

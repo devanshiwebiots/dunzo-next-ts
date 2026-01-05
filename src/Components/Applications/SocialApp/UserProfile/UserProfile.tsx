@@ -14,7 +14,7 @@ const UserProfile :React.FC<SocialAppCallBackType> = ({ callback }) => {
           <div className="cardheader socialheader" />
           <div className="user-image">
             <div className="avatar">
-              <Image priority width={1600} height={470} alt="user" src={`${ImagePath}/user/1.jpg`} />
+              <Image priority width={1600} height={470} alt="user" src={`${ImagePath}/user/1.jpg`} unoptimized/>
             </div>
             <div className="icon-wrapper">
               <Link href={Href}><i className="icofont icofont-pencil-alt-5" /></Link>

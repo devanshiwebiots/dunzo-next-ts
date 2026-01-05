@@ -584,7 +584,7 @@ export const FilteringTableData = [
 const FilteringTableNameData: React.FC<FilteringTableNameProp> = ({ image, name }) => {
   return (
     <>
-      <Image priority width={32} height={32} className="img-fluid table-avtar" src={`${ImagePath}/${image}`} alt="user image" />
+      <Image priority width={32} height={32} className="img-fluid table-avtar" src={`${ImagePath}/${image}`} alt="user image" unoptimized/>
       {name}
     </>
   );

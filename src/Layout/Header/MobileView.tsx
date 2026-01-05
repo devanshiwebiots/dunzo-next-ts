@@ -15,8 +15,8 @@ export const MobileView = () => {
     <Col xs="auto" className="header-logo-wrapper p-0">
       <div className="logo-wrapper">
         <Link href="/dashboard/default">
-          <Image width={120} height={38} className="img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="" priority />
-          <Image width={120} height={38} className="img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt=""  priority/>
+          <Image width={120} height={38} className="img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="" priority unoptimized/>
+          <Image width={120} height={38} className="img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt=""  priority unoptimized/>
         </Link>
       </div>
       <div className="toggle-sidebar">

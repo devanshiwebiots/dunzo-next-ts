@@ -19,7 +19,7 @@ export const BankLogoList :React.FC<BankLogoListProp> = ({ getUserData }) => {
               <li key={index}>
                 <Input id={data.bankName} type="radio" name="bankName" value={data.bankName} checked={bankName === data.bankName} onChange={getUserData} />
                 <Label htmlFor={data.bankName} check>
-                  <Image priority width={100} height={52} src={`${ImagePath}/forms/${data.imageName}`} alt={data.bankName} />
+                  <Image priority width={100} height={52} src={`${ImagePath}/forms/${data.imageName}`} alt={data.bankName} unoptimized/>
                   <span>{data.bankName}</span>
                 </Label>
               </li>

@@ -28,7 +28,7 @@ export const SideBar = () => {
               <SimpleBar>
                 <li className="back-btn">
                   <Link href="/dashboard/default">
-                    <Image priority width={32} height={32} className="img-fluid" src={`${ImagePath}/logo/logo-icon.png`} alt="" />
+                    <Image priority width={32} height={32} className="img-fluid" src={`${ImagePath}/logo/logo-icon.png`} alt="" unoptimized/>
                   </Link>
                   <div className="mobile-back text-end">
                     <span>Back </span>

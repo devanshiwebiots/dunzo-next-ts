@@ -31,7 +31,7 @@ export const MailInbox : React.FC<CallbackProp>=({ activeCallback }) =>{
               <NavLink className={`p-0 ${activeTab === index ? "active" : ""}`} href={Href} onClick={() => handleEmails(index)}>
                 <div className="d-flex">
                   <div className="media-size-email">
-                    <Image width={50} height={50} className="me-3 rounded-circle" src={`${ImagePath}/user/user.png`} alt="" priority />
+                    <Image width={50} height={50} className="me-3 rounded-circle" src={`${ImagePath}/user/user.png`} alt="" priority unoptimized/>
                   </div>
                   <div className="flex-grow-1">
                     <h3>{item.title}<small><span className="ps-1">({item.date}</span> {item.month} <span>{item.year})</span></small></h3>

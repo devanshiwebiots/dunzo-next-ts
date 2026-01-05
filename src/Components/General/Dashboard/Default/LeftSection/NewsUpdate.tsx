@@ -14,7 +14,7 @@ export const NewsUpdate = () => {
         <CardBody>
           {NewsUpdateData.map((item) => (
             <div className={`d-flex align-items-center ${item.id === 1 ? "pt-0" : ""}`} key={item.id}>
-              <Image priority width={77} height={67} src={`${ImagePath}/dashboard/${item.src}`} alt="" />
+              <Image priority width={77} height={67} src={`${ImagePath}/dashboard/${item.src}`} alt="" unoptimized/>
               <div className="flex-grow-1 ms-3">
                 <Link href="/app/social_app">
                   <h5>{item.title}</h5>

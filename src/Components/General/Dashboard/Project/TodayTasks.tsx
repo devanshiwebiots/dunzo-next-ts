@@ -29,7 +29,7 @@ export const TodayTasks=()=> {
                                                 <ul>
                                                     {item.customers.map((list) => (
                                                         <li className="d-inline-block" key={list.id}>
-                                                            <Image priority width={25} height={25} src={`${ImagePath}/dashboard-3/user/${list.image}`} alt="user" />
+                                                            <Image priority width={25} height={25} src={`${ImagePath}/dashboard-3/user/${list.image}`} alt="user" unoptimized/>
                                                         </li>
                                                     ))}
                                                 </ul>

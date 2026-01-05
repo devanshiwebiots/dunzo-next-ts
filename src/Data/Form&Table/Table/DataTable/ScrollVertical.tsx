@@ -578,7 +578,7 @@ export const ScrollVerticalData = [
 const ScrollImage: React.FC<ScrollImageType> = ({ image, title }) => {
   return (
     <>
-      <Image priority width={32} height={32} className="img-fluid table-avtar" src={`${ImagePath}/${image}`} alt="userImage" /> {title}
+      <Image priority width={32} height={32} className="img-fluid table-avtar" src={`${ImagePath}/${image}`} alt="userImage" unoptimized/> {title}
     </>
   );
 };

@@ -23,7 +23,7 @@ export const NotificationCard=()=> {
                     <ul className="notification-box">
                         {NotificationCardData.map((item) => (
                             <li className="d-flex" key={item.id}>
-                                <div className="flex-shrink-0"><Image priority width={38} height={38} src={`${ImagePath}/dashboard/user/${item.image}`} alt="" /></div>
+                                <div className="flex-shrink-0"><Image priority width={38} height={38} src={`${ImagePath}/dashboard/user/${item.image}`} alt="" unoptimized/></div>
                                 <div className="flex-grow-1">
                                     <Link href="/chat/private_chat">
                                         <h5>{item.title}</h5>

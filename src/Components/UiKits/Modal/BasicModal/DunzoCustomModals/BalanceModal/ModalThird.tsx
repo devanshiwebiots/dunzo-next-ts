@@ -15,7 +15,7 @@ const ModalThird = () => {
         <div className="Riho-demo-img">
           <CommonRihoModalTitle heading="Modal 3 -" subHeading="Balance Modal" text="Example of Riho dashboard balance card." />
           <div className="overflow-hidden balance-modal">
-            <Image priority width={482} height={263} src={`${ImagePath}/alert/balance.png`} alt="learning" />
+            <Image priority width={482} height={263} src={`${ImagePath}/alert/balance.png`} alt="learning" unoptimized/>
             <Button color="primary" className="mx-auto mt-3" onClick={modalThirdToggle}>{ClickOut}</Button>
           </div>
           <BalanceModal modalThird={modalThird} modalThirdToggle={modalThirdToggle} />

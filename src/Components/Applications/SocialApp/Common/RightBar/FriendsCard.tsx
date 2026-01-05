@@ -15,7 +15,7 @@ const FriendsCard = () => {
         <CardBody className="avatar-showcase filter-cards-view">
           {FriendsImages.map((data, index) => (
             <div className="d-inline-block friend-pic" key={index}>
-              <Image width={50} height={50} className="img-50 rounded-circle" src={`${ImagePath}/user/${data}`} alt="images" priority/>
+              <Image width={50} height={50} className="img-50 rounded-circle" src={`${ImagePath}/user/${data}`} alt="images" priority unoptimized/>
             </div>
           ))}
         </CardBody>

@@ -18,7 +18,7 @@ export const PricingPlan = () => {
           <h5>{Free}</h5>
           <p>{"100 GB Space"}</p>
           <Button size="xs" color="primary" outline>{Selected}</Button>
-          <Image width={128} height={128} className="bg-img" src={`${ImagePath}/dashboard/folder.png`} alt="" priority />
+          <Image width={128} height={128} className="bg-img" src={`${ImagePath}/dashboard/folder.png`} alt="" priority unoptimized/>
         </div>
       </li>
     </ul>

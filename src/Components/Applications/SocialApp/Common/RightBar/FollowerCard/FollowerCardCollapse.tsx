@@ -11,7 +11,7 @@ const FollowerCardCollapse :React.FC<MyProfileClassCollapseProp> = ({ isFilter }
       <CardBody className="social-list filter-cards-view">
         {FollowerData.map((data, index) => (
           <div className="d-flex" key={index}>
-            <Image width={50} height={50} className="img-50 img-fluid m-r-20 rounded-circle" alt="img" src={`${ImagePath}/user/${data.imageName}`} priority/>
+            <Image width={50} height={50} className="img-50 img-fluid m-r-20 rounded-circle" alt="img" src={`${ImagePath}/user/${data.imageName}`} priority unoptimized/>
             <div className="flex-grow-1">
               <span className="d-block">{data.name}</span>
               <Link href={Href}>{AddFriend}</Link>

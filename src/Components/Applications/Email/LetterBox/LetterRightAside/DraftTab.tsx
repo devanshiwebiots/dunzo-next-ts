@@ -31,7 +31,7 @@ export const DraftTab = () => {
               </FormGroup>
               <SVG className={`important-mail ${fillState[i] ? "active" : ""}`} iconId="fill-star" onClick={() => handleValue(i)} />
               <div className="rounded-border">
-                {item.image && <Image width={38} height={38} src={`${ImagePath}/user/${item.image}`} alt="user" priority />}
+                {item.image && <Image width={38} height={38} src={`${ImagePath}/user/${item.image}`} alt="user" priority unoptimized/>}
                 {item.shortName && ( <div className={item.color === "success" ? "circle-success" : ""}><p className={`txt-${item.color}`}>{item.shortName}</p></div>)}
               </div>
               <p>{item.name}</p>

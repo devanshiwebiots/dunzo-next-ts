@@ -8,7 +8,7 @@ const FinishForm = () => {
       <Row>
         <Col xs="12" className="m-0">
           <div className="successful-form">
-            <Image priority width={100} height={100} className="img-fluid" src={`${ImagePath}/gif/dashboard-8/successful.gif`} alt="successful" />
+            <Image priority width={100} height={100} className="img-fluid" src={`${ImagePath}/gif/dashboard-8/successful.gif`} alt="successful" unoptimized/>
             <h6>{Congratulations}</h6>
             <p>Well done! You have successfully completed.</p>
           </div>

@@ -15,7 +15,7 @@ export const SalesEventCalendar = () => {
               <p>{"Bland it curability id vel vitae Ullamcorper sapien ante quam id. Vulputate viverra dictum."}</p>
             </div>
             <div className="sale">
-              <Image priority width={198} height={203} src={`${ImagePath}/dashboard-2/event.png`} alt="" />
+              <Image priority width={198} height={203} src={`${ImagePath}/dashboard-2/event.png`} alt="" unoptimized/>
             </div>
           </div>
           <div className="set-sales">

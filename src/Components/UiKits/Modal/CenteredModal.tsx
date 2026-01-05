@@ -19,7 +19,7 @@ const CenteredModal = () => {
             <CommonModal centered isOpen={centred} toggle={centeredToggle}>
               <div className="modal-toggle-wrapper">
                 <ul className="modal-img">
-                  <li className="text-center"><Image priority width={100} height={100} src={`${ImagePath}/gif/danger.gif`} alt="error" /></li>
+                  <li className="text-center"><Image priority width={100} height={100} src={`${ImagePath}/gif/danger.gif`} alt="error" unoptimized/></li>
                 </ul>
                 <h4 className="text-center pb-2">{SomethingWentWrong}</h4>
                 <p className="text-center">Attackers on malicious activity may trick you into doing something dangrous like installing software or revealing your personal informations.</p>

@@ -20,7 +20,7 @@ const PhotosTab = () => {
                     <Item original={`${ImagePath}/big-lightgallry/${item.image}`} width="1500" height="780" caption={description}>
                       {({ ref, open }) => (
                         <Link href={Href} onClick={open}>
-                          <Image priority width={370} height={216} className="img-thumbnail border-bottom-0 p-2 rounded-0 rounded-top-1" ref={ref} src={`${ImagePath}/big-lightgallry/${item.image}`} alt="thumbnail" />
+                          <Image priority width={370} height={216} className="img-thumbnail border-bottom-0 p-2 rounded-0 rounded-top-1" ref={ref} src={`${ImagePath}/big-lightgallry/${item.image}`} alt="thumbnail" unoptimized/>
                           <div className="caption border-top-0 p-2">
                             <h4 className="mt-1">{item.title}</h4>
                             <p>{`is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.`}</p>

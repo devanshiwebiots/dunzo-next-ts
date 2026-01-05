@@ -25,7 +25,7 @@ export const CartList = () => {
             <Fragment key={index}>
               <li>
                 <div className='d-flex'>
-                <Image width={40} height={40} className="img-fluid b-r-5 me-3 img-60" src={`${ImagePath}/ecommerce/${data.image}`} alt={Href} priority />
+                <Image width={40} height={40} className="img-fluid b-r-5 me-3 img-60" src={`${ImagePath}/ecommerce/${data.image}`} alt={Href} priority unoptimized/>
                   <div className='flex-grow-1'>
                     <span>{data.name}</span>
                     <div className='qty-box'>
@@ -62,7 +62,7 @@ export const CartList = () => {
         </Fragment>
       ) : (
         <Col sm={12} className='empty-cart-cls text-center'>
-          <Image height={172} width={172} src={`${ImagePath}/ecommerce/icon-empty-cart.png`} className='img-fluid mb-4 mt-4' alt='Empty Cart' />
+          <Image height={172} width={172} src={`${ImagePath}/ecommerce/icon-empty-cart.png`} className='img-fluid mb-4 mt-4' alt='Empty Cart' unoptimized/>
           <h3>
             <strong>Your Cart is Empty</strong>
           </h3>

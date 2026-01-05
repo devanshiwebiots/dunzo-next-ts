@@ -13,8 +13,8 @@ export default function InvoiceFiveHeader() {
         <tbody>
           <tr style={{ padding: "28px 0 5px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <td>
-              <Image width={120} height={38} className="for-light" src={`${ImagePath}/logo/logo-1.png`} alt="logo" priority/>
-              <Image width={120} height={38} className="for-dark" src={`${ImagePath}/logo/logo.png`} alt="logo" priority/>
+              <Image width={120} height={38} className="for-light" src={`${ImagePath}/logo/logo-1.png`} alt="logo" priority unoptimized/>
+              <Image width={120} height={38} className="for-dark" src={`${ImagePath}/logo/logo.png`} alt="logo" priority unoptimized/>
             </td>
             <td>
               <InvoiceRightSide />

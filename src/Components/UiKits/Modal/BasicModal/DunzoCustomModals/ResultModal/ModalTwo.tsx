@@ -16,7 +16,7 @@ const ModalTwo = () => {
         <div className="Riho-demo-img">
           <CommonRihoModalTitle heading="Modal 2 -" subHeading="Result Modal" text="Example of Riho login form." />
           <div className="overflow-hidden">
-            <Image priority width={482} height={263} className="image-fluid" src={`${ImagePath}/alert/learning.png`} alt="learning" />
+            <Image priority width={482} height={263} className="image-fluid" src={`${ImagePath}/alert/learning.png`} alt="learning" unoptimized/>
             <Button color="primary" className="mx-auto mt-3" onClick={modalTwoToggle}>{ClickOut}</Button>
           </div>
           <CommonModal centered modalBodyClassName="social-profile text-start" fade={true} isOpen={modalTwo} toggle={modalTwoToggle}>

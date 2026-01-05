@@ -10,7 +10,7 @@ const LearningCommentTwo: string = "There are many variations of passages of Lor
   return (
     <div className="blog-single">
       <div className="blog-box blog-details">
-        <Image priority width={1920} height={1200} className="img-fluid w-100" src={`${ImagePath}/faq/learning-1.png`} alt="blog-main" />
+        <Image priority width={1920} height={1200} className="img-fluid w-100" src={`${ImagePath}/faq/learning-1.png`} alt="blog-main" unoptimized/>
         <BlogDetails />
       </div>
       <section className="comment-box">

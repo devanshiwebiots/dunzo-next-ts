@@ -30,7 +30,7 @@ export const WorkTab = () => {
               </FormGroup>
               <SVG className={`important-mail ${fill[i] ? "active" : ""}`} iconId="fill-star" onClick={() => handleValue(i)} />
               <div className="rounded-border">
-                {data.image && <Image width={38} height={38} src={`${ImagePath}/user/${data.image}`} alt="user" priority />}
+                {data.image && <Image width={38} height={38} src={`${ImagePath}/user/${data.image}`} alt="user" priority unoptimized/>}
                 {data.shortName && (
                   <div className={data.color === "success" ? "circle-success" : ""}><p className={`txt-${data.color}`}>{data.shortName}</p></div>
                 )}

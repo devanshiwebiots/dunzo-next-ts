@@ -12,7 +12,7 @@ const NewUserClass = () => {
       <Card>
         <CardBody>
           <NewUsersSocial />
-          <Image priority width={752} height={472} className="img-fluid" alt="timeline" src={`${ImagePath}/social-app/timeline-1.png`}/>
+          <Image priority width={752} height={472} className="img-fluid" alt="timeline" src={`${ImagePath}/social-app/timeline-1.png`} unoptimized/>
           <div className="timeline-content">
             <p>{`The only way to do something in depth is to work hard. I've always thought of the T-shirt as the Alpha of the fashion alphabet. My breakfast is very important. Everything I do is a matter of heart, body and soul.`}</p>
             <LikeContent />

@@ -18,7 +18,7 @@ export default function WelcomeCard() {
               </Link>
             </div>
             <div className="flex-shrink-0">
-              <Image priority width={164} height={161} src={`${ImagePath}/dashboard/welcome.png`} alt="" />
+              <Image priority width={164} height={161} src={`${ImagePath}/dashboard/welcome.png`} alt="" unoptimized/>
             </div>
           </div>
         </CardBody>

@@ -51,7 +51,7 @@ const RightChatBody = () => {
               const participators = allMembers.find((x: AllMemberType) => x.id === item.sender);
               return (
                   <div className={`msg ${item.sender === currentUser?.id ? "right" : "left"}-msg`} key={id}>
-                    {item?.name ? <div className="msg-img" /> : <Image width={33} height={33} src={`${ImagePath}/${participators?.image}`} className="rounded-circle img-30 h-auto" alt="user" priority />}
+                    {item?.name ? <div className="msg-img" /> : <Image width={33} height={33} src={`${ImagePath}/${participators?.image}`} className="rounded-circle img-30 h-auto" alt="user" priority unoptimized/>}
                     <div className="msg-bubble mx-2">
                       <div className="msg-info">
                         <div className="msg-info-name">{!item?.sender ? "Theresa Webb" : selectedUser?.name}</div>

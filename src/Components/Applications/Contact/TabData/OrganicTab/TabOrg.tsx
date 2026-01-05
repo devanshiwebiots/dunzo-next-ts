@@ -15,7 +15,7 @@ const TabOrg = () => {
       <TabPane tabId={item.activeTab} key={i}>
          <div className="profile-mail">
             <div className='d-flex'>
-              <Image width={100} height={100} className="img-100 img-fluid m-r-20 rounded-circle update_img_0" src={`${ImagePath}/user/${item.image}`} alt=""  priority/>
+              <Image width={100} height={100} className="img-100 img-fluid m-r-20 rounded-circle update_img_0" src={`${ImagePath}/user/${item.image}`} alt=""  priority unoptimized/>
               <div className="mt-0 flex-grow-1">
                 <h5><span className="first_name_0">{item.name}</span></h5>
                 <p className="email_add_0">{item.email}</p>

@@ -10,7 +10,7 @@ const BlogWithoutDetails = () => {
         <Col md="6" xl="3" className="box-col-3" key={index}>
           <Card>
             <div className="blog-box blog-grid text-center">
-              <Image priority width={381} height={238} className="img-fluid top-radius-blog rounded-top-3" src={`${ImagePath}/blog/${data.src}`} alt="blog" />
+              <Image priority width={381} height={238} className="img-fluid top-radius-blog rounded-top-3" src={`${ImagePath}/blog/${data.src}`} alt="blog" unoptimized/>
               <div className="blog-details-main">
                 <ul className="blog-social">
                   <li className="digits rounded-0">9 April 2024</li>

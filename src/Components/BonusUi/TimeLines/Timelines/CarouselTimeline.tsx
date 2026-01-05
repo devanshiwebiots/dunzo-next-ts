@@ -21,7 +21,7 @@ const CarouselSpanText: string = "Spend some time looking up current design tren
         <Swiper width={615} modules={[Pagination, Navigation]} navigation pagination={{ clickable: true }} loop={true} slidesPerView={"auto"}>
           {CarouselDataList.map((item, index) => (
             <SwiperSlide key={index}>
-              <Image src={`${ImagePath}/${item.image}`} alt={`carousel-item-${index}`} className="d-block" width={615} height={313} />
+              <Image src={`${ImagePath}/${item.image}`} alt={`carousel-item-${index}`} className="d-block" width={615} height={313} unoptimized/>
             </SwiperSlide>
           ))}
         </Swiper>

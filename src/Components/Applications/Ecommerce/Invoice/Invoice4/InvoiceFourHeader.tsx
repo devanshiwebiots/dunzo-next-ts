@@ -25,8 +25,8 @@ export default function InvoiceFourHeader() {
               </ul>
             </td>
             <td>
-              <Image width={158} height={50} className="for-light" style={{ height: 50, marginBottom: 14 }} src={`${ImagePath}/logo/logo-1.png`} alt="logo" priority />
-              <Image width={158} height={50} className="for-dark" style={{ height: 50, marginBottom: 14 }} src={`${ImagePath}/logo/logo.png`} alt="logo" priority />
+              <Image width={158} height={50} className="for-light" style={{ height: 50, marginBottom: 14 }} src={`${ImagePath}/logo/logo-1.png`} alt="logo" priority unoptimized/>
+              <Image width={158} height={50} className="for-dark" style={{ height: 50, marginBottom: 14 }} src={`${ImagePath}/logo/logo.png`} alt="logo" priority unoptimized/>
               <span style={{ display: "block", lineHeight: "1.5", fontSize: 18, fontWeight: 400, opacity: "0.8" }}>2118 Thornridge Cir. Syracuse, Connecticut 35624, United State</span>
               <span style={{ display: "block", lineHeight: "1.5", fontSize: 18, fontWeight: 400, opacity: "0.8" }}>{"Phone"} : (239) 555-0108</span>
               <span style={{ display: "block", lineHeight: "1.5", fontSize: 18, fontWeight: 400, opacity: "0.8" }}>{"Email"} : Dunzo@themesforest.com</span>

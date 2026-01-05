@@ -32,7 +32,7 @@ export const MessageSection = () => {
             <li key={index}>
               <div className="d-flex align-items-start">
                 <div className="message-img bg-light-primary">
-                  <Image priority width={40} height={40} src={`${ImagePath}/user/${item.src}`} alt="image" />
+                  <Image priority width={40} height={40} src={`${ImagePath}/user/${item.src}`} alt="image" unoptimized/>
                 </div>
                 <div className="flex-grow-1">
                   <h5 className="mb-1">

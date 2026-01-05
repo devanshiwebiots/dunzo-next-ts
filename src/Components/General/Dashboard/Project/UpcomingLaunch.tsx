@@ -26,7 +26,7 @@ export default function UpcomingLaunch() {
                                 <ul>
                                     {DynamicNumber(2).map((item, index) => (
                                         <li className="d-inline-block" key={index}>
-                                            <Image priority width={42} height={42} src={`${ImagePath}/dashboard-3/user/${item}.png`} alt="user" />
+                                            <Image priority width={42} height={42} src={`${ImagePath}/dashboard-3/user/${item}.png`} alt="user" unoptimized/>
                                         </li>
                                     ))}
                                     <li className="d-inline-block">

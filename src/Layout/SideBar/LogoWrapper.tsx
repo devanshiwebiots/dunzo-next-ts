@@ -12,7 +12,7 @@ export const LogoWrapper = () => {
     <>
       <div className="logo-wrapper">
         <Link href={Href}>
-          <Image width={121} height={38} className="img-fluid" src={`${ImagePath}/logo/logo.png`} alt="" priority />
+          <Image width={121} height={38} className="img-fluid" src={`${ImagePath}/logo/logo.png`} alt="" priority unoptimized/>
         </Link>
         <div className="toggle-sidebar">
           <SVG className="sidebar-toggle" iconId="toggle-icon" onClick={()=>dispatch(handleResponsiveToggle())}/>
@@ -20,7 +20,7 @@ export const LogoWrapper = () => {
       </div>
       <div className="logo-icon-wrapper">
         <Link href="/">
-          <Image width={32} height={32} className="img-fluid" src={`${ImagePath}/logo/logo-icon.png`} alt="logo" priority />
+          <Image width={32} height={32} className="img-fluid" src={`${ImagePath}/logo/logo-icon.png`} alt="logo" priority unoptimized/>
         </Link>
       </div>
     </>

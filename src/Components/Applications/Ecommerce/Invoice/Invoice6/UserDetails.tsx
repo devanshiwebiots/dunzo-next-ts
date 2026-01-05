@@ -9,7 +9,7 @@ export default function UserDetails() {
       <Col md="4">
         <div className="d-flex">
           <div className="media-left">
-            <Image width={60} height={60} className="media-object rounded-circle img-60" src={`${ImagePath}/user/1.jpg`} alt="user" priority />
+            <Image width={60} height={60} className="media-object rounded-circle img-60" src={`${ImagePath}/user/1.jpg`} alt="user" priority unoptimized/>
           </div>
           <div className="flex-grow-1 m-l-20">
             <h3 className="media-heading">{"Johan Deo"}</h3>

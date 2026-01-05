@@ -10,7 +10,7 @@ const BlogWithDetails = () => {
         <Card key={index}>
           <Row className="blog-box blog-list">
             <Col sm="5">
-              <Image priority width={316} height={225} className="img-fluid sm-100-w" src={`${ImagePath}/blog/blog-${data.image}.jpg`} alt="images"/>
+              <Image priority width={316} height={225} className="img-fluid sm-100-w" src={`${ImagePath}/blog/blog-${data.image}.jpg`} alt="images" unoptimized/>
             </Col>
             <Col sm="7">
               <div className="blog-details">
